@@ -1,14 +1,14 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { navbar } from "../data/Data";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { MdOutlineShoppingBag } from "react-icons/md";
-import { HiOutlineHeart, HiOutlineUser } from "react-icons/hi";
+import { HiOutlineHeart, HiOutlineUser, HiMenu, HiX } from "react-icons/hi";
 import Sidebar from "./Sidebar";
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
   const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
@@ -25,51 +25,91 @@ const Header = () => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   const { totalItems } = useSelector((state) => state.cart);
+
   return (
     <>
-      <div
-        className={`${sticky ? "header py-1 sticky !bg-black/50 !text-white top-0 z-50 shadow-xl" : ""}`}
-      >
-        <div className="flex flex-wrap justify-between items-center w-10/12 m-auto">
-          <div>
-            <div className="logo font-playwrite">funiture</div>
-          </div>
-          <div className="md:flex flex-wrap text-base py-7">
+      <div className={`relative ${sticky ? "header py-1 sticky !bg-black/50 !text-white top-0 z-50 shadow-xl" : ""}`}>
+        <div className="flex justify-between items-center w-10/12 m-auto py-4">
+          <div className="text-xl font-bold font-playwrite">funiture</div>
+
+         
+
+          {/* Desktop navigation */}
+          <div className="hidden md:flex space-x-6">
             {navbar.map((nav, key) => (
-              <div key={key} className="mr-5">
-                <Link
-                  className="active link-hover transition-all"
-                  to={nav.path}
-                >
-                  {nav.nav}
-                </Link>
-              </div>
+              <Link key={key} className="active link-hover transition-all" to={nav.path}>
+                {nav.nav}
+              </Link>
             ))}
           </div>
 
-          <li className="flex">
-            <Link onClick={toggleSidebar} className=" mr-5 text-2xl">
+          {/* Icons */}
+          <div className="flex items-center space-x-5">
+            <Link to="/wishlist" className="text-2xl">
               <HiOutlineHeart />
             </Link>
-            <Link className=" mr-5 text-2xl">
+            <Link to="/profile" className="text-2xl">
               <HiOutlineUser />
             </Link>
-            <Link onClick={toggleSidebar} className="relative  mr-5 text-2xl">
+            <Link onClick={toggleMobileMenu} className="relative text-2xl">
               <MdOutlineShoppingBag />
-
-              <div className="items_count">
-                <span className="text-white">{totalItems}</span>
+              <div className="absolute -top-2 -right-2 h-5 w-5 rounded-full bg-red-500 text-white text-sm flex items-center justify-center">
+                {totalItems}
               </div>
             </Link>
-          </li>
+
+              {/* Mobile menu button */}
+        
+            <div className="md:hidden flex items-center">
+            <button onClick={toggleMobileMenu} className="text-3xl">
+              {isMobileMenuOpen ? <HiX /> : <HiMenu />}
+            </button>
+          </div>
+          </div>
         </div>
       </div>
-      <Sidebar
-        isSidebarOpen={isSidebarOpen}
-        closeSidebar={() => toggleSidebar()}
-      />
+
+      {/* Mobile navigation menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden w-full h-full fixed top-0 z-[99] bg-white text-black/90 ">
+          <div className="flex items-center justify-between px-5 ">
+          <div className="text-xl font-bold font-playwrite  my-5 ">funiture</div>
+          <span className="text-[1.5rem]" onClick={toggleMobileMenu}><HiX /></span>
+          </div>
+          <div className="flex flex-col space-y-4 p-4">
+            {navbar.map((nav, key) => (
+              <Link key={key} className="text-xl" to={nav.path} onClick={toggleMobileMenu}>
+                {nav.nav}
+              </Link>
+            ))}
+            <Link to="/wishlist" className="text-xl flex items-center space-x-2" onClick={toggleMobileMenu}>
+              <HiOutlineHeart />
+              <span>Wishlist</span>
+            </Link>
+            <Link to="/profile" className="text-xl flex items-center space-x-2" onClick={toggleMobileMenu}>
+              <HiOutlineUser />
+              <span>Profile</span>
+            </Link>
+            <Link to="/cart" className="text-xl flex items-center space-x-2" onClick={toggleMobileMenu}>
+              <MdOutlineShoppingBag />
+              <span>Cart</span>
+              <div className="relative -top-3 right-0 h-5 w-5 rounded-full bg-red-500 text-white text-sm flex items-center justify-center">
+                {totalItems}
+              </div>
+            </Link>
+            
+          </div>
+          
+        </div>
+      )}
+
+      {/* Sidebar for the cart */}
+      <Sidebar isSidebarOpen={isSidebarOpen} closeSidebar={toggleSidebar} />
     </>
   );
 };
