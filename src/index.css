@@ -118,6 +118,17 @@ body {
   left: 0px !important;
 }
 
+.productDet .slick-prev {
+  left: 40px !important;
+  top:0 !important
+}
+
+.productDet .slick-next {
+  left: 40px !important;
+  top:100% !important;
+ 
+}
+
 .products .slick-next,
 .products .slick-prev {
   background-color: #fff !important;

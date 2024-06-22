@@ -12,6 +12,7 @@ import {
   IoMdHeartEmpty,
   IoMdSearch,
 } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const BestSeller = () => {
   const [isModalOpen, setIsModalOpen] = useState(null);
@@ -42,9 +43,11 @@ const BestSeller = () => {
             <div key={index} className="mt-8">
               <div className="overflow-hidden relative ml-4">
                 <div className="image-container relative">
-                  <div className="rounded-3xl">
+                 <Link to={`/product/${item?.id}`}>
+                 <div className="rounded-3xl">
                     <img src={item.img} alt="img" className="rounded-3xl" />
                   </div>
+                 </Link>
 
                   <div className="opacity-0 absolute top-0 right-0 m-4">
                     <div>

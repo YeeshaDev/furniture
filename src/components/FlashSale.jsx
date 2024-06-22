@@ -18,7 +18,7 @@ const FlashSale = () => {
     <div>
       <div className="w-11/12 m-auto">
         <Heading heading={"Most Popular"} />
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {products.map((item, index) => (
             <div key={index} className="mt-8">
               <div className="overflow-hidden relative">

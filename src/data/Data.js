@@ -211,8 +211,19 @@ export const products = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
   },
   {
-    id: 14,
+    id: 15,
     img: "../images/miniture/chair/14.jpeg",
+    category: "High Price",
+    brand: "Indian",
+    title: "Stylish Chair",
+    short_description: "Lorem ipsum dolor",
+    price: "129.00",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elitLorem ipsum dolor sit amet, consectetur adipiscing elit  euismod er  elit",
+  },
+  {
+    id: 14,
+    imgs: ["../images/miniture/chair/14.jpeg", "../images/miniture/chair/13.jpeg", "../images/miniture/chair/12.jpeg", ],
     category: "High Price",
     brand: "Indian",
     title: "Stylish Chair",

@@ -10,6 +10,7 @@ import ContactUs from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Blog from "./pages/Blog";
 import Faq from "./pages/Faq";
+import ProductPage from "./pages/ProductDetails";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
