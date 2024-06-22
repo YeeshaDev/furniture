@@ -1,5 +1,5 @@
 import { arriveItems } from "../data/Data";
-import Heading from "../common/Heading";
+//import Heading from "../common/Heading";
 import { Link } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import Container from "../common/Container";
@@ -8,10 +8,10 @@ const Arrived = () => {
   return (
     <div>
       <Container>
-        <Heading heading={"Just Arrived"} />
-        <div className="flex flex-col md:flex-row items-center mt-10">
+       
+        <div className="flex flex-col md:flex-row items-center gap-x-10 mt-10">
           <div className="md:w-2/3 mb-5">
-            <h1 className="font-semibold text-3xl">Instagram Shop</h1>
+            <h1 className="font-semibold text-3xl text-center lg:text-start">Instagram Shop</h1>
             <p className="my-4">
               Tag @ miniture in your Instagram photos for a chance to be
               featured here.

@@ -34,9 +34,30 @@ const Header = () => {
   return (
     <>
       <div className={`relative ${sticky ? "header py-1 sticky !bg-black/50 !text-white top-0 z-50 shadow-xl" : ""}`}>
-        <div className="flex justify-between items-center w-10/12 m-auto py-4">
+      {
+        !sticky && (
+          <>
+          <div className="flex py-2 text-sm text-gray-600 px-10 items-center justify-between">
+      <Link className="active link-hover transition-all" >
+      Free shipping for orders over $59!
+              </Link>
+              <div className="space-x-3">
+                <Link to='/faq' className="active link-hover transition-all" >
+                Faq
+              </Link>
+              <Link className="active link-hover transition-all" >
+               Contact
+              </Link></div>
+      </div>
+        <hr />
+        </>
+        )
+      }
+    
+        <div className="flex justify-between items-center w-11/12 m-auto py-4">
+        <Link to='/'>
           <div className="text-xl font-bold font-playwrite">funiture</div>
-
+          </Link>
          
 
           {/* Desktop navigation */}
@@ -56,18 +77,18 @@ const Header = () => {
             <Link to="/profile" className="text-2xl">
               <HiOutlineUser />
             </Link>
-            <Link onClick={toggleMobileMenu} className="relative text-2xl">
+            <div onClick={toggleSidebar} className="relative text-2xl">
               <MdOutlineShoppingBag />
               <div className="absolute -top-2 -right-2 h-5 w-5 rounded-full bg-red-500 text-white text-sm flex items-center justify-center">
                 {totalItems}
               </div>
-            </Link>
+            </div>
 
               {/* Mobile menu button */}
         
             <div className="md:hidden flex items-center">
             <button onClick={toggleMobileMenu} className="text-3xl">
-              {isMobileMenuOpen ? <HiX /> : <HiMenu />}
+              {isMobileMenuOpen ? '' : <HiMenu />}
             </button>
           </div>
           </div>
@@ -76,7 +97,7 @@ const Header = () => {
 
       {/* Mobile navigation menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden w-full h-full fixed top-0 z-[99] bg-white text-black/90 ">
+        <div className="md:hidden w-1/2 h-full fixed transition-all delay-150 duration-200 top-0 z-[99] bg-white text-black/90 ">
           <div className="flex items-center justify-between px-5 ">
           <div className="text-xl font-bold font-playwrite  my-5 ">funiture</div>
           <span className="text-[1.5rem]" onClick={toggleMobileMenu}><HiX /></span>
@@ -95,14 +116,12 @@ const Header = () => {
               <HiOutlineUser />
               <span>Profile</span>
             </Link>
-            <Link to="/cart" className="text-xl flex items-center space-x-2" onClick={toggleMobileMenu}>
+            <div onClick={toggleSidebar} className="relative text-2xl">
               <MdOutlineShoppingBag />
-              <span>Cart</span>
-              <div className="relative -top-3 right-0 h-5 w-5 rounded-full bg-red-500 text-white text-sm flex items-center justify-center">
+              <div className="absolute -top-2 -right-2 h-5 w-5 rounded-full bg-red-500 text-white text-sm flex items-center justify-center">
                 {totalItems}
               </div>
-            </Link>
-            
+            </div>
           </div>
           
         </div>

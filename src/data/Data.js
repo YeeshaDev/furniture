@@ -1,9 +1,5 @@
 export const navbar = [
-  {
-    id: 1,
-    path: "/",
-    nav: "Home",
-  },
+  
   {
     id: 2,
     path: "/shop",

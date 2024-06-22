@@ -9,6 +9,7 @@ import Shop from "./pages/Shop";
 import ContactUs from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Blog from "./pages/Blog";
+import Faq from "./pages/Faq";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/faq" element={<Faq />} />
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
