@@ -52,9 +52,9 @@ function Faq() {
             </div>
             </article> 
 
-            <article>
+            <article id='shipment'>
             
-            <div className='py-8 '>
+            <div className='py-8 ' >
             <h3 className='font-semibold text-2xl mb-5 lg:text-3xl'>03. Shipments</h3>
             <ul>
                 <li className='flex flex-col'>

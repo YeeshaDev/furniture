@@ -11,6 +11,7 @@ export default {
         primary: "#000000",
         secondary: "#ffffff",
         tertiary: "#000000",
+        ash:'#a7a9a7'
       },
       fontFamily: {
         playwrite: ["Playwrite US Trad", "cursive"],

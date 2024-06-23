@@ -45,7 +45,7 @@ const BestSeller = () => {
                 <div className="image-container relative">
                  <Link to={`/product/${item?.id}`}>
                  <div className="rounded-3xl">
-                    <img src={item.img} alt="img" className="rounded-3xl" />
+                    <img src={item?.img || item?.imgs[0]} alt="img" className="rounded-3xl" />
                   </div>
                  </Link>
 
