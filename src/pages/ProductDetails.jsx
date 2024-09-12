@@ -67,7 +67,7 @@ const ProductPage = () => {
   return (
     <>
       <Container>
-        <div className="flex flex-col md:flex-row gap-x-10 py-4">
+        <div className="flex flex-col lg:flex-row gap-x-10 py-4">
           {/* Image Gallery */}
           <div className="  md:flex  items-start justify-center lg:max-w-[55%] ">
             {/* For Medium to Large Screens */}
