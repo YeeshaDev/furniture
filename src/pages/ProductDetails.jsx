@@ -78,7 +78,7 @@ const ProductPage = () => {
                     <img
                       src={img}
                       alt={`Thumbnail ${index}`}
-                      className={`cursor-pointer first:pt-5 w-[120px] h-[150px] object-cover ${selectedImage === img ? 'border-2 border-black h-full' : ''}`}
+                      className={`cursor-pointer first:pt-5 w-[120px] h-[150px] object-cover ${selectedImage === img ? 'h-full' : ''}`}
                       onClick={() => setSelectedImage(img)}
                     />
                   </div>
