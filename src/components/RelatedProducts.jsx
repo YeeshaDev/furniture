@@ -29,6 +29,22 @@ const RelatedProducts = () => {
     autoplay: true,
     prevArrow: <IoIosArrowRoundBack />,
     nextArrow: <IoIosArrowRoundForward />,
+    responsive: [
+      {
+        breakpoint: 768, 
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, 
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div>

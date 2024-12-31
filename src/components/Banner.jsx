@@ -22,7 +22,7 @@ const Banner = () => {
       <Container>
        
         <div className="w-full relative">
-        <div className=" text-lg text-[#fff8f8] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  z-10 flex flex-col items-center justify-center gap-y-5 px-10">
+        <div className=" text-lg text-[#fff8f8] absolute top-[42%] sm:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  z-10 flex flex-col items-center justify-center gap-y-5 px-10">
            <span className="uppercase tracking-wider font-[var(--playwrite)]">Elevate your home</span>
            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-semibold whitespace-nowrap">  Transforming Your Lifestyle <br /> with Our Furniture  Creations</h1> 
            
@@ -41,7 +41,7 @@ const Banner = () => {
                 <img
                   src={data.banner}
                   alt="databannerinmg"
-                  className="rounded-2xl h-[600px] lg:h-[85vh] object-cover"
+                  className="rounded-2xl h-[450px] sm:h-[600px] lg:h-[85vh] object-cover"
                   width={"100%"}
                 />
                 <div className="absolute w-full h-full inset-y-0 inset-x-0 bg-[rgba(0,0,0,0.07)] z-[1] rounded-2xl"></div>

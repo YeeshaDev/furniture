@@ -10,18 +10,18 @@ const Offer = () => {
           {offer.map((data, key) => (
             <div key={key}>
               <div className="relative">
-                <div className="craft-img rounded-3xl">
+                <div className=" craft-img h-[300px] sm:h-full rounded-3xl">
                   <img
                     src={data.customer_img}
                     alt="img"
-                    className="w-full rounded-3xl"
+                    className="w-full h-full object-cover rounded-3xl"
                   />
                 </div>
-                <div>
-                  <p className="bg-white p-4 text-xl rounded-full absolute top-0 -right-6">
+                <div >
+                  <p className="bg-white mx-2 sm:mx-0 p-4 text-xl rounded-full absolute top-3 sm:top-0 -right-6">
                     {data.title}
                   </p>
-                  <h1 className="bg-white px-6 py-6 text-3xl absolute top-14 -right-6 rounded-full">
+                  <h1 className="bg-white ml-3 text-center sm:mx-0 px-6 py-6 text-3xl absolute top-[4.7rem] sm:top-14 -right-6 rounded-full">
                     {data.subtitle}
                   </h1>
                 </div>

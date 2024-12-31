@@ -5,7 +5,7 @@ const Category = () => {
   return (
     <div className="px-3 md:w-11/12 m-auto">
       <h2 className="text-3xl font-semibold mt-6 mb-2 px-1">Shop By Category</h2>
-      <div className="flex">
+      <div className="sm:flex">
         {category.map((category, key) => (
           <div className="" key={key}>
             <div className="m-2">

@@ -29,7 +29,7 @@ const Arrived = () => {
                 <div className="">
                   <div
                     className={`relative rounded-3xl overflow-hidden ${
-                      index === 4 ? "fifth-image lg:!mt-[-12rem]" : ""
+                      index === 4 ? "fifth-image !mt-[-5rem] lg:!mt-[-12rem]" : ""
                     }`}
                   >
                     <img
