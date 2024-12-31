@@ -406,37 +406,37 @@ export const blogData = [
   {
       id:1,
       title:'Bright partitions and chunks of marble define Loreak',
-      image:'https://freebw.com/templates/novas/images/blog-masonry-5.jpg',
+      image:'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       text:'Lorem ipsum dolor sit amet, consectetuer the melt adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo. '
   }, 
   {
       id:2,
-      image:'https://freebw.com/templates/novas/images/blog-masonry-3.jpg',
-      title:'Top 10 Luxury Cars of the Year: Unparalleled Elegance and Performance',
+      image:'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      title:'Top 10 Luxury Furniture Trends of the Year',
       text:'Lorem ipsum dolor sit amet, consectetuer the melt adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo. '
   },
  
   {
       id:3, 
-      title:'Navigating the World of Autonomous Cars: Innovation, Challenges, and the Road Ahead',
-      image:'https://freebw.com/templates/novas/images/blog-masonry-2.jpg',
+      title:'Navigating the World of Sustainable Furniture Design',
+      image:'https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       text:'Lorem ipsum dolor sit amet, consectetuer the melt adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo. '
   }, 
   {
       id:4,
-      title:'The Future of Electric Cars: Advancements and Impacts on the Automotive Industry',
-      image:'https://freebw.com/templates/novas/images/blog-masonry-6.jpg',
+      title:'The Future of Modular Furniture: Innovations for Modern Living',
+      image:'https://plus.unsplash.com/premium_photo-1684338795288-097525d127f0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       text:'Lorem ipsum dolor sit amet, consectetuer the melt adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo. '
   },
   {   id:5,
-      title:'Exploring Iconic Muscle Cars: A Journey Through Automotive History',
-      image:'https://freebw.com/templates/novas/images/standard-post-1.jpg',
+      title:'Exploring Iconic Vintage Furniture Pieces',
+      image:'https://plus.unsplash.com/premium_photo-1670076513880-f58e3c377903?q=80&w=1918&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       text:'Lorem ipsum dolor sit amet, consectetuer the melt adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo. '
   },
   {
    id:6,
-   title:'Behind the Wheel: A Thrilling Test Drive of the Latest Sports Car Sensation',
-   image:'https://freebw.com/templates/novas/images/standard-post-2.jpg',
+   title:'Behind the Scenes: The Craftsmanship of Bespoke Furniture',
+   image:'https://images.unsplash.com/photo-1567016432779-094069958ea5?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   text:'Lorem ipsum dolor sit amet, consectetuer the melt adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing dolgedo. '
 
   }
