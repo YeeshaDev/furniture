@@ -69,7 +69,6 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Icons */}
           <div className="flex items-center space-x-5">
             <Link to="/wishlist" className="text-2xl">
               <HiOutlineHeart />
@@ -83,8 +82,6 @@ const Header = () => {
                 {totalItems}
               </div>
             </div>
-
-              {/* Mobile menu button */}
         
             <div className="md:hidden flex items-center">
             <button onClick={toggleMobileMenu} className="text-3xl">
@@ -127,7 +124,6 @@ const Header = () => {
         </div>
       )}
 
-      {/* Sidebar for the cart */}
       <Sidebar isSidebarOpen={isSidebarOpen} closeSidebar={toggleSidebar} />
     </>
   );
