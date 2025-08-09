@@ -2,8 +2,7 @@
 import { FaTimes } from 'react-icons/fa'
 import ThreeSixty from 'react-360-view'
 
-export default function ProductRotateModal({onClose,selectedImage}) {
-    //console.log('selectedImage',selectedImage)
+export default function ProductRotateModal({onClose,selectedImage}) 
     return (
         
           <div className="modal-overlay">
