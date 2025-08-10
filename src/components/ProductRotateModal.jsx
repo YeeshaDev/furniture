@@ -2,7 +2,7 @@
 import { FaTimes } from 'react-icons/fa'
 import ThreeSixty from 'react-360-view'
 
-export default function ProductRotateModal({onClose,selectedImage}) 
+export default function ProductRotateModal({onClose,selectedImage}) {
     return (
         
           <div className="modal-overlay">
@@ -22,9 +22,10 @@ export default function ProductRotateModal({onClose,selectedImage})
   autoplay
   loop
 />
-             </div>
+                 
+ </div>
           
-        </div>
+    </div>
         </div>
     )
 }
