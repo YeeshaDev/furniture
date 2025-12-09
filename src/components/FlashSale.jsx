@@ -24,7 +24,6 @@ const FlashSale = () => {
           {products.map((item, index) => (
             <div key={index} className="mt-8">
               <div className="overflow-hidden relative group">
-                {/* Image container with tilt effect on hover */}
                 <Link to={`/product/${item?.id}`}>
                 <div className="relative max-h-[300px] rounded-3xl">
                   <img
@@ -65,7 +64,6 @@ const FlashSale = () => {
           ))}
         </div>
       </div>
-
       <Modal
         data={products.find((item) => item.id === isModalOpen)}
         isModalOpen={isModalOpen}
